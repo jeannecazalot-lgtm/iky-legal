@@ -5,49 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iky — Privacy Policy</title>
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:680px;margin:0 auto;padding:48px 24px;line-height:1.6;color:#1c1c1e;background:#fff}
-  h1{font-size:1.9rem;margin-bottom:.2em}
-  h2{font-size:1.2rem;margin-top:2em}
-  .muted{color:#6e6e73}
-  a{color:#0a84ff}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:680px;margin:0 auto;padding:48px 24px;line-height:1.6;color:#1c1c1e;background:#fff}
+h1{font-size:1.9rem;margin-bottom:.2em}
+h2{font-size:1.2rem;margin-top:2em}
+.muted{color:#6e6e73}
+a{color:#0a84ff}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{border-top:1px solid #e5e5ea;padding:8px 6px;text-align:left;vertical-align:top}
 </style>
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">iky — last updated August 16, 2026</p>
+<p class="muted">iky — last updated October 2026</p>
 
-<p>iky is a quiz game you play as a duo. This policy explains what data the app
-handles, and why. Short version: iky works without an account, and we collect
-as little as possible.</p>
+<p>iky is a game to find out who knows whom best, played as a duo or in a group of up to 10.
+This policy explains what data the app handles and why. Short version: iky works without an
+account, we collect as little as possible, we never sell your data, and we don't track you
+across other companies' apps or websites.</p>
 
-<h2>What we collect</h2>
+<h2>What stays on your phone</h2>
 <ul>
-  <li><strong>Game data.</strong> Your first name (as you type it), your answers,
-  scores and game history. Game sessions transit through our game server to sync
-  the two players and are not used for anything else.</li>
-  <li><strong>Profile photo (optional).</strong> If you choose one, it is used to
-  show your avatar to the player you're playing with. We never browse your photo
-  library — only the photo you pick.</li>
-  <li><strong>Purchases.</strong> Subscriptions are processed by Apple. We use
-  RevenueCat to validate your subscription status. We never see your payment
-  details.</li>
-  <li><strong>Advertising attribution.</strong> If you allow tracking (iOS asks
-  you explicitly), the TikTok Business SDK helps us know that our ad brought you
-  here, and whether it led to a subscription. If you decline, this measurement
-  is disabled — the app works exactly the same.</li>
+<li><b>Your profile</b> — first name and photo. They stay on your device, except in the cases
+described below (playing a game, sharing an invitation link).</li>
+<li><b>Your game history</b> — past games, scores and what you learned about your friends.</li>
 </ul>
+
+<h2>What leaves your phone, and why</h2>
+<ul>
+<li><b>Playing a game.</b> Your first name, photo, answers and score go through our game server
+so the other players can see them during the game. Game sessions are not stored after the
+game ends.</li>
+<li><b>Sharing an invitation link</b> (only when you tap "Share the link" or "Who wants to play
+with me?"). To build the link preview ("Jeanne is waiting for you" with your face), your first
+name and photo are uploaded to our server. <b>Anyone who has the link can see that first name
+and photo.</b> Invitations and their photos are deleted automatically after 30 days.</li>
+<li><b>Notifications</b> (only if you allow them, and only asked when you use "Who wants to play
+with me?"). We store a random player identifier created by the app and your device's
+notification token, so we can tell you when a friend accepts your invitation — nothing else. Notification permission is asked when you first open the app; notifications are only used for invitations, never for promotions.
+They are deleted after 90 days without activity.</li>
+<li><b>Purchases.</b> Subscriptions are processed by Apple. RevenueCat checks your subscription
+status. We never see your payment details.</li>
+<li><b>Ad measurement.</b> Adjust and the TikTok Business SDK tell us whether one of our ads
+brought you to the app and whether it led to a trial or a subscription. They use device
+information and your approximate location (country, derived from your IP address). This data
+is not linked to your identity, and we don't use it to track you across other companies' apps
+or websites without your permission: iOS asks you at the end of your first game ("Allow iky to track your activity…"). Only if you allow it can Adjust and TikTok read the advertising identifier (IDFA); if you don't, nothing is tracked across apps. <b>In the European Economic Area, the United Kingdom and Switzerland, ad
+measurement only starts if you tap "Allow"</b> when asked (asked once, at the end of your first game); you can change your choice at any time
+in your profile ("Ad measurement"). If you decline, nothing is sent to Adjust or TikTok — and an
+invitation link opened before installing the app may not bring you straight into the game.</li>
+<li><b>Games nearby (Bluetooth).</b> While you are in a lobby, your phone broadcasts the game
+code and your first name over Bluetooth so that friends in the same room can see your game and
+join it. On the home screen, the app listens for such games around you. Nothing is sent to our
+servers for this, we don't use Bluetooth to locate you, and it only works if you allow Bluetooth
+for iky.</li>
+<li><b>Feedback.</b> If you send us a message from "An idea? A bug? Write to us", we receive
+your message, your first name, the app version, your language and the random identifier of your app — so we can understand and fix
+the issue.</li>
+<li><b>Saving or sharing a story.</b> The image is created on your phone; it only goes to
+Instagram or your photo library when you choose to.</li>
+<li><b>Diagnostics and anonymous usage data.</b> Basic crash and error information, to fix bugs, and anonymous usage events (for example: a game started or finished, a screen or offer viewed, a subscription started), tied to a random identifier generated on your device — never your name, your photo or your answers. We use them only to understand how the app is used and improve it; they are not shared with advertisers.</li>
+</ul>
+
+<h2>Who processes this data for us</h2>
+<table>
+<tr><th>Service</th><th>What for</th></tr>
+<tr><td>Colyseus Cloud</td><td>Game server (live games)</td></tr>
+<tr><td>Supabase</td><td>Invitations, invitation photos, player identifiers and notification tokens; question bank; feedback messages; anonymous usage events</td></tr>
+<tr><td>Cloudflare</td><td>playiky.com invitation links and previews</td></tr>
+<tr><td>Expo (EAS)</td><td>Delivering notifications and app updates</td></tr>
+<tr><td>RevenueCat</td><td>Subscription status</td></tr>
+<tr><td>Adjust, TikTok</td><td>Ad measurement</td></tr>
+</table>
+
+<h2>Other players</h2>
+<p>What you write during a game (for example free-text answers) is shown to the other players
+of that game. The host of a game can remove a player from the lobby. You can block a player —
+you won't be matched with them again — or report a player or an answer: the report reaches us
+by e-mail and we handle it within 24 hours.</p>
 
 <h2>What we don't do</h2>
 <ul>
-  <li>No selling of personal data, to anyone, ever.</li>
-  <li>No third-party ads inside the app.</li>
-  <li>No access to your contacts, location, or microphone.</li>
+<li>No selling of personal data, to anyone, ever.</li>
+<li>No third-party ads inside the app.</li>
+<li>No access to your contacts, microphone or location. The camera and photo library
+are only used when you choose your profile photo.</li>
 </ul>
 
-<h2>Data retention &amp; deletion</h2>
-<p>Game history is stored on your device. Server-side session data is
-short-lived and tied to your game codes, not to your identity. To remove
-everything, delete the app — or email us and we'll help.</p>
+<h2>Retention &amp; deletion</h2>
+<p>Invitations and their photos: 30 days. Player identifiers and notification tokens: 90 days
+after your last activity. Feedback messages: 12 months. Game sessions: not kept after the game. Everything on your phone is
+removed when you delete the app. You can also ask us to delete your data at any time by e-mail —
+we'll do it within 30 days.</p>
+<p>If you are in the European Union or the United Kingdom, you have the right to access,
+correct and delete your data, and to object to its processing; you can also complain to your
+data protection authority. The legal bases are the performance of the service you ask for
+(games, invitations, notifications, subscription) your consent (ad measurement) and our legitimate interest (diagnostics, anonymous usage data).</p>
 
 <h2>Children</h2>
 <p>iky is not directed at children under 13.</p>
